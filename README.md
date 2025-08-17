@@ -19,6 +19,6 @@ Script PowerShell permettant de :
 
 ```powershell
 .\version-windows.ps1 `
-  -SearchBases @("OU=Domain Controllers,DC=ferri,DC=local","OU=SRV-FERRI,OU=ferri,DC=ferri,DC=local") `
+  -SearchBases @("OU=Domain Controllers,DC=TEST,DC=local","OU=SRV-TEST,OU=TEST,DC=TEST,DC=local") `
   -OutFolder "C:\Temp" `
   -WebhookUrl "https://discord.com/api/webhooks/xxxxx"
