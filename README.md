@@ -18,7 +18,9 @@ Script PowerShell permettant de :
 ## Utilisation
 
 ```powershell
+  -Install-Module ImportExcel -Scope CurrentUser
 .\version-windows.ps1 `
   -SearchBases @("OU=Domain Controllers,DC=TEST,DC=local","OU=SRV-TEST,OU=TEST,DC=TEST,DC=local") `
   -OutFolder "C:\Temp" `
   -WebhookUrl "https://discord.com/api/webhooks/xxxxx"
+
