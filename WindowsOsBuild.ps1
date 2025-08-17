@@ -139,7 +139,7 @@ try {
 
     $sw.Write("--$boundary$lf")
     $sw.Write("Content-Disposition: form-data; name=`"payload_json`"$lf$lf")
-    $sw.Write("{""content"":""Rapport inventaire Windows généré le $DateRapport""}$lf")
+    $sw.Write("{""content"":""Rapport inventaire Windows OS Build du $DateRapport""}$lf")
     $sw.Write("--$boundary--$lf")
     $sw.Flush()
 
@@ -152,3 +152,4 @@ catch {
 
 # --- Récap ---
 Write-Host ("Total machines uniques: {0}" -f (($computers | Measure-Object).Count))
+
